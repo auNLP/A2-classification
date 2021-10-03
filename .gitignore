@@ -134,3 +134,4 @@ dmypy.json
 
 # VS code
 .vscode/settings.json
+.vscode
