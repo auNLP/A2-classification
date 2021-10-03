@@ -19,7 +19,10 @@ mdl.fit(X, y)
 # predict using the trained model:
 y_hat = mdl.predict(X)
 ```
-*Note*: The input features can be inferred when fitting feel free to adapt the function accordingly. Furthermore, you might wish the `fit` to take additional parameters such as learning rate and the number of epochs.
+
+The logistic regression should be implemented in pytorhc thus you naturally can not use the [logistic regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) implementation from scikit-learn.
+
+*Note*: The input features can be inferred when fitting feel free to adapt the function accordingly. Furthermore, you might wish the `fit` to take additional parameters such as learning rate and the number of epochs. 
 
 
 - [ ] A neural network class
