@@ -77,7 +77,7 @@ Lastly,
   - [ ] all functions should include documentation such that the code is readable, though it can be kept minimal
   - [ ] and you should fill out the readme containing a summary of your solution no longer than an abstract, a performance table and guide on how to reproduce the results.
 
-*Note* that naturally the pre-implemented tests should pass and that you are welcome to add more tests.
+*Note* that, naturally, the pre-implemented tests should pass and that you are welcome to add more tests. Please also tick off the boxes if you feel you have completed the task.
 
 
 ## Project Organization
