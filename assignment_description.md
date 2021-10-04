@@ -59,6 +59,7 @@ You will have to implement the TF-IDF calculations yourself. For instance, you *
 
 - [ ] Apply the function to the SST2 dataset to create a TF-IDF representation of the document.
 Do note that document frequencies should be estimated on the train set as otherwise, your test data will influence your training samples leading to inflated performance scores.
+Feel free to use the preimplemented `load_sst2` function in `data.py`
 
 
 - [ ] Using this TF-IDF representation fit a both the logistic regression and the neural network model and test the performance on the test set

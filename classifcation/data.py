@@ -1,41 +1,30 @@
 """
 This contains function for dealing with
 
-"""
-
-
-from datasets import load_dataset
-
 # read more: https://huggingface.co/datasets/glue
 # we will be using sst2 a sentiment dataset by stanford
 # compare performance with others:
 # https://paperswithcode.com/sota/sentiment-analysis-on-sst-2-binary
 
-dataset = load_dataset("glue", "sst2")
-
-train = dataset["train"]
-
-print("Examining train set:")
-print(train)
-print(train.features)
-# Examining train set:
-# Dataset({
-#     features: ['sentence', 'label', 'idx'],
-#     num_rows: 67349
-# })
-# {'sentence': Value(dtype='string', id=None), 'label': ClassLabel(num_classes=2, names=['negative', 'positive'], names_file=None, id=None), 'idx': Value(dtype='int32', id=None)}
-
-print("Information about the dataset:")
-print(train.info.description)
-print("Homepage")
-print(train.info.homepage)
-
-print("Examining sentence")
-print(type(train["sentence"]))
-print(type(train["sentence"][0]))
+"""
 
 
-print("Examining label")
-print(type(train["label"]))
-print(type(train["label"][0]))
-print(set(train["label"]))
+from typing import Tuple
+from datasets import load_dataset
+
+
+def load_sst2(split: str="train") -> Tuple[list, list]:
+    """load the sst2 dataset
+
+    Args:
+        split (str, optional): The dataset split, options include "train", "validation", "test". Defaults to "train".
+
+    Returns:
+        Tuple[List, List]: A tuple of two lists, one containing the texts, and the second one containing the labels. 
+            0 is negative, 1 is positive.
+    """
+
+    dataset = load_dataset("glue", "sst2")
+
+    split = dataset[split]
+    return (split["sentence"], split["label"])
