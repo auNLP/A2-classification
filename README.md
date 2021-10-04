@@ -4,7 +4,7 @@
 # Summary
 
 <!-- 
-This should include a short description of which models you have tried and conclusions from comparing these models. This should be no longer than an abstract. This section can also include questions regarding the assignment.
+This should include a short description of which models you have tried and conclusions from comparing these models. It should also include an argument This should be no longer than an abstract. This section can also include questions regarding the assignment.
 -->
 
 # Performance
@@ -21,6 +21,10 @@ You should at least report the accuracy but are free to report other measures su
 
 ## Project Organization
 The organization of the project is as follows:
+
+<!-- 
+Correct this to reflect changes which you might have made
+-->
 
 ```
 ├── LICENSE                    <- the license of this code

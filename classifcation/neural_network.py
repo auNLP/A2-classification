@@ -10,3 +10,9 @@ class NeuralNet(nn.Module):
         super(NeuralNet, self).__init__()
         pass
         #your code
+
+    def fit(self, X, y):
+        pass
+
+    def predict(self, X):
+        pass

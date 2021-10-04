@@ -1,10 +1,8 @@
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
-import numpy as np
-
-from logistic import Logistic
-from neural_network import NeuralNet
+from ..logistic import Logistic
+from ..neural_network import NeuralNet
 
 # make data
 X, y = datasets.make_classification(n_samples=1000, n_features=10, random_state=7)
